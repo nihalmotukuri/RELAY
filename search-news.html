@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="search-new.css">
+</head>
+
+<body>
+
+    <main class="box-border">
+
+        <section id="heroSection">
+            <header id="header" class="header">
+                <nav id="navbar" class="max-w-[1400px] h-full w-full">
+                    <div class=" h-full w-full flex justify-between items-center">
+                        <div class="logo">
+                            RELAY
+                        </div>
+
+                        <ul id="nav-links" class="nav-links">
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Contact</li>
+                            <li>About</li>
+                        </ul>
+
+                        <div>
+                            <button id="loginBtn">Login</button>
+                            <div id="navToggle" class="h-[48px] w-[48px] nav-toggle">
+                                <i class="bi bi-list text-[36px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="navDropdown" class="nav-dropdown hidden">
+                        <ul class="dropdown-nav-links">
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Contact</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="min-h-screen w-screen">
+                <div class="min-h-[40vh] pt-[130px] flex flex-col items-center">
+                    <h1 class="time">
+                        12:00:00
+                    </h1>
+                    <p class="date">
+                        Sunday 11 July
+                    </p>
+                    <p class="temperature">
+                        Current temperature: 28°C
+                    </p>
+                </div>
+
+                <div class="search-component">
+                    <div class="search-bar">
+                        <i class="bi bi-search text-white text-[24px]"></i>
+                        <input class="input-search" type="search">
+                    </div>
+
+                    <div class="search-results hidden">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loginPage" class="text-[#0B1D2E] hidden">
+            <header class="component-header">
+                <nav class="max-w-[1400px] h-full w-full flex justify-between items-center">
+                    <div class="logo">
+                        RELAY
+                    </div>
+                </nav>
+            </header>
+
+            <div class="min-h-screen w-screen flex justify-center items-center p-3">
+                <div id="loginComponent">
+                    <div class="w-full flex justify-end">
+                        <div class="close-container">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-[#0B1D2E] text-[28px] font-semibold mb-[16px]">Login</h1>
+                    <div class="login-cont">
+                        <input id="loginInput" class="input-styles" placeholder="Email">
+                        <i class="fa-solid fa-envelope text-black"></i>
+                    </div>
+                    <div class="login-cont">
+                        <input class="input-styles" placeholder="Password">
+                        <i class="bi bi-key-fill text-black text-[20px]"></i>
+                    </div>
+                    <div></div>
+                    <button class="login-sec-btn">Login</button>
+                    <p class="text-[17px]">Don't have an account? <span id="register" class="register-text">Register</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="signupPage" class="text-[#0B1D2E] hidden">
+            <header class="component-header">
+                <nav class="max-w-[1400px] h-full w-full flex justify-between items-center">
+                    <div class="logo">
+                        RELAY
+                    </div>
+                </nav>
+            </header>
+
+            <div class="min-h-screen w-screen flex justify-center items-center p-3">
+                <div id="signupComponent">
+                    <div class="w-full flex justify-end">
+                        <div class="close-container">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-[#0B1D2E] text-[28px] font-semibold mb-[16px]">Register</h1>
+                    <div class="login-cont">
+                        <input id="siginupInput" class="input-styles" placeholder="Username">
+                        <i class="bi bi-person-fill text-black"></i>
+                    </div>
+                    <div class="login-cont">
+                        <input id="siginupInput" class="input-styles" placeholder="Email">
+                        <i class="fa-solid fa-envelope text-black"></i>
+                    </div>
+                    <div class="login-cont">
+                        <input class="input-styles" placeholder="Create Password">
+                        <i class="bi bi-key-fill text-black text-[20px]"></i>
+                    </div>
+                    <div class="login-cont">
+                        <input class="input-styles" placeholder="Confirm Password">
+                        <i class="bi bi-key-fill text-black text-[20px]"></i>
+                    </div>
+                    <div></div>
+                    <button class="login-sec-btn">Register</button>
+                    <p class="text-[17px]">Already! have an account? <span id="register" class="register-text">Login</span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="search-news.js"></script>
+
+</body>
+
+</html>
